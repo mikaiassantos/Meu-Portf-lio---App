@@ -4,6 +4,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import HomePage from '../screens/HomePage';
 import ProfilePage from '../screens/ProfilePage';
+import ProjectsStack from '../routes/ProjectsStack';
 import Contacts from '../screens/Contacts';
 import AboutMe from '../screens/AboutMe'; // Importe a nova tela
 
@@ -12,8 +13,8 @@ const Drawer = createDrawerNavigator();
 const DrawerRoutes = () => {
   return (
     <Drawer.Navigator
-      drawerContent={props => <CustomDrawerContent {...props} />}
-      screenOptions={{
+      drawerContent={props => CustomDrawerContent(props)}
+      drawerContentOptions={{
         activeTintColor: '#11212d',
         itemStyle: { marginVertical: 5 },
         labelStyle: { fontWeight: 'normal', fontSize: 16 },
@@ -31,6 +32,13 @@ const DrawerRoutes = () => {
         component={AboutMe}
         options={{
           drawerIcon: ({ color, size }) => <Icon name="info" color={color} size={size} />,
+        }}
+      />
+      <Drawer.Screen
+        name="Projects"
+        component={ProjectsStack}
+        options={{
+          drawerIcon: ({ color, size }) => <Icon name="folder" color={color} size={size} />,
         }}
       />
       <Drawer.Screen
@@ -55,7 +63,7 @@ const CustomDrawerContent = (props) => {
   return (
     <DrawerContentScrollView {...props}>
       <View style={styles.drawerHeader}>
-        <Text style={styles.drawerHeaderText}>OPÇÕES</Text>
+        <Text style={styles.drawerHeaderText}>Meu App</Text>
       </View>
       <DrawerItemList {...props} />
       <DrawerItem

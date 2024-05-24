@@ -27,7 +27,7 @@ const ProjectDetailsPage = ({ route }) => {
         description = "O projeto é o desenvolvimento de um cardápio digital para uma cafeteria. Este cardápio online permite que os clientes explorem as opções de alimentos e bebidas oferecidos pela cafeteria de maneira interativa e atrativa. O design do cardápio foi pensado para ser visualmente agradável e funcional, facilitando a navegação pelos diferentes itens. A interface é responsiva, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops. Este projeto foi criado utilizando HTML, CSS e JavaScript para garantir uma apresentação elegante e uma navegação intuitiva.";
         break;
       case 4:
-        description = "ProStarbucks é o meu primeiro projeto desenvolvido com HTML e CSS! Este projeto foi criado como parte do meu aprendizado inicial em desenvolvimento web. Ao projetar esta página, busquei transmitir não apenas a estética visual característica da Starbucks, mas também oferecer uma experiência envolvente aos visitantes. Com um design limpo e moderno, a página apresenta elementos familiares aos fãs da marca, como as cores icônicas e a tipografia marcante. Este projeto representa o início da minha jornada no mundo do desenvolvimento web e o meu compromisso em aprender e evoluir constantemente nesta área fascinante.";
+        description = "ProStarbucks é o meu primeiro projeto desenvolvido com HTML e CSS! Este projeto foi criado como parte do meu aprendizado inicial em desenvolvimento web. Este projeto representa o início da minha jornada no mundo do desenvolvimento web e o meu compromisso em aprender e evoluir constantemente nesta área fascinante.";
         break;
       default:
         description = '';

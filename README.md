@@ -26,16 +26,12 @@
 - [React Native Vector Icons](https://oblador.github.io/react-native-vector-icons/)
 
 ## 📸 Capturas de Tela
-<div style="display: flex; justify-content: space-around; align-items: center;">
-  
-  <img src="assets/layout-page-mobile.png" alt="Captura de Tela do Projeto página responsiva" width="241" height="416">
-</div>
 
 <p align="center">
-  <img src="layoutPage.png" alt="Captura de Tela do Projeto" width="339" height="735">
-  <img src="layout.gif" alt="About Me Screen" width="200"/>
-  <img src="https://via.placeholder.com/150" alt="Contacts Screen" width="200"/>
-  <img src="https://via.placeholder.com/150" alt="Projects Screen" width="200"/>
+  <img src="assets/layout-app-welcome.png" alt="Welcome" width="200">
+  <img src="assets/layoutPage.png" alt="Home" width="200"/>
+  <img src="assets/layout-app-about.png" alt="About Me" width="200"/>
+  <img src="assets/layout-app-project.png" alt="Projects Screen" width="200"/>
 </p>
 
 ## 🙏 Agradecimentos

@@ -7,8 +7,16 @@ const Stack = createStackNavigator();
 const ProjectsStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Projects" component={Projects} />
-      <Stack.Screen name="ProjectDetails" component={ProjectDetailsPage} />
+      <Stack.Screen
+        name="Projects"
+        component={Projects}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="ProjectDetails"
+        component={ProjectDetailsPage}
+        options={({ route }) => ({ headerTitle: route.params.project.name })}
+      />
     </Stack.Navigator>
   );
 };

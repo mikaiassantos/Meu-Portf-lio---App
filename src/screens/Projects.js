@@ -1,10 +1,5 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/native';
 import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
-import ProjectDetailsPage from './ProjectDetailsPage';
-
-const Stack = createStackNavigator();
 
 const projects = [
   { id: 1, name: 'TrendTrove', url: 'https://produtos-trendtrove.netlify.app/', image: require('../../assets/project(1).jpg') },
@@ -30,19 +25,6 @@ const Projects = ({ navigation }) => {
         </TouchableOpacity>
       ))}
     </ScrollView>
-  );
-};
-
-const ProjectsStack = () => {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="Projects" component={Projects} options={{ headerShown: false }} />
-      <Stack.Screen 
-        name="ProjectDetails" 
-        component={ProjectDetailsPage} 
-        options={({ route }) => ({ headerTitle: route.params.project.name })} 
-      />
-    </Stack.Navigator>
   );
 };
 
@@ -77,12 +59,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default () => (
-  <NavigationContainer independent={true}>
-    <ProjectsStack />
-  </NavigationContainer>
-);
-
-
-
-
+export default Projects;

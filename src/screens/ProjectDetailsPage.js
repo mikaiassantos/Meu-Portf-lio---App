@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const ProjectDetailsPage = ({ route }) => {
   const { project } = route.params;
 
-  // URLs do GitHub para cada projeto
   const githubUrls = {
     1: 'https://github.com/mikaiassantos/TrendTrove-Store',
     2: 'https://github.com/mikaiassantos/RapidRecip---App',
@@ -13,7 +12,6 @@ const ProjectDetailsPage = ({ route }) => {
     4: 'https://github.com/mikaiassantos/Starbucks-Page/tree/main',
   };
 
-  // Função para renderizar a descrição do projeto
   const renderDescription = () => {
     let description = '';
     switch (project.id) {
@@ -105,7 +103,7 @@ const styles = StyleSheet.create({
   githubButton: {
     width: 51,
     height: 51,
-    backgroundColor: '#11212d', // Cor vinho
+    backgroundColor: '#11212d',
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -113,4 +111,3 @@ const styles = StyleSheet.create({
 });
 
 export default ProjectDetailsPage;
-

@@ -30,8 +30,8 @@
 <p align="center">
   <img src="assets/layout-app-welcome.png" alt="Welcome" width="200">
   <img src="assets/layoutPage.png" alt="Home" width="200"/>
-  <img src="assets/layout-app-about.png" alt="About Me" width="200"/>
-  <img src="assets/layout-app-project.png" alt="Projects Screen" width="200"/>
+  <img src="assets/layout-app-project.png" alt="About Me" width="200"/>
+  <img src="assets/layout-app-project-details.png" alt="Projects Screen" width="200"/>
 </p>
 
 ## 🙏 Agradecimentos
